@@ -4,7 +4,7 @@ import PricePresenter from "./PricePresenter";
 
 export default class extends React.Component {
   state = {
-    coins: null,
+    prices: null,
     loading: true
   };
 

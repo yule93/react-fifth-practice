@@ -4,20 +4,18 @@ import { coinsApi } from "../../Components/api";
 
 export default class extends React.Component {
   state = {
-    name: null,
-    symbol: null,
-    price: null,
+    coins: null,
     loading: true
   };
 
   async componentDidMount() {
     try {
       const {
-        data: { results }
+        data: { results: coins }
       } = await coinsApi.coins();
       console.log(results);
       this.setState({
-        coins: results
+        coins
       });
     } catch (error) {
       this.setState({

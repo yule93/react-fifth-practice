@@ -4,9 +4,7 @@ import { exchangesApi } from "../../Components/api";
 
 export default class extends React.Component {
   state = {
-    name: null,
-    description: null,
-    link: null,
+    exchanges: null,
     loading: true
   };
 
