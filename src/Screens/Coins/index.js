@@ -1,0 +1,1 @@
+import CoinsContainer from "./CoinsContainer";
