@@ -19,7 +19,7 @@ export default class extends React.Component {
       });
     } catch (error) {
       this.setState({
-        error: "Can't loading prices information."
+        error: "Can't loading coins information."
       });
     } finally {
       this.setState({

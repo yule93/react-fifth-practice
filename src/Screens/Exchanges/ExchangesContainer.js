@@ -1,6 +1,6 @@
 import React from "react";
 import ExchangesPresenter from "./ExchangesPresenter";
-import { exchangesApi } from "../../Components/api";
+import { coinsApi } from "../../Components/api";
 
 export default class extends React.Component {
   state = {
@@ -10,11 +10,11 @@ export default class extends React.Component {
 
   async componentDidMount() {
     try {
-      const exchanges = await exchangesApi.exchanges();
+      const exchanges = await coinsApi.exchanges();
       console.log(exchanges);
     } catch (error) {
       this.setState({
-        error: "Can't loading prices information."
+        error: "Can't loading exchanges information."
       });
     } finally {
       this.setState({
